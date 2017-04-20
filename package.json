@@ -1,0 +1,26 @@
+{
+  "name": "sass-themify",
+  "version": "1.0.0",
+  "description": "sass mixin for managing multiple themed sass templates",
+  "main": "sass-themify.scss",
+  "style": "sass-themify.scss",
+  "files": [
+    "LICENSE.md",
+    "sass-themify.scss"
+  ],
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "sass",
+    "scss",
+    "theme",
+    "themify",
+    "mixin",
+    "style",
+    "css"
+  ],
+  "author": "Xun Chen <xunchen369@gmail.com> (https://github.com/gone369)",
+  "license": "MIT",
+  "devDependencies": {}
+}

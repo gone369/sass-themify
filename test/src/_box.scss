@@ -1,0 +1,18 @@
+#box{
+  border-width: 10px;
+  border-style: solid;
+  width: 400px;
+  height: 300px;
+  position: relative;
+  #text{
+    @extend .center-in-box;
+    font-size: 18px;
+    font-weight: bold;
+  }
+}
+
+@include sass-themify($element:#box){
+  color: sass-themify-get-color("text");
+  border-color: sass-themify-get-color("border");
+  background: sass-themify-get-color("background")
+}

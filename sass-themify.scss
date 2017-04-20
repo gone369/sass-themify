@@ -1,0 +1,53 @@
+@mixin sass-themify-init($scheme-table){
+  @if $scheme-table == null{
+    @error "[sass-themify] sass-themify mixin needs a valid $scheme-table map defined"
+  } @else {
+    @if variable-exists("sass-themify-scheme-table") {
+      @warn "[sass-themify] sass-themify has already been initialized once. Initializing again will replace the previous initialized color scheme"
+    }
+    $sass-themify-scheme-table: $scheme-table !global;
+  }
+}
+
+@mixin sass-themify($element:"body"){
+  //determine if global varaible has been declared or not
+  @if not variable-exists("sass-themify-theme-name") {
+    $sass-themify-theme-name: null !global;
+  }
+
+  @each $theme-name, $color-map in $sass-themify-scheme-table{
+    $sass-themify-theme-name: $theme-name !global;
+    @if $theme-name != "default"{
+      #{$element}.#{$theme-name}{
+        @content;
+      }
+    } @else {
+      #{$element}{
+        @content;
+      }
+    }
+    $sass-themify-theme-name: null !global;
+  }
+}
+
+@function sass-themify-get-map-deep($map, $keys...) {
+  @each $key in $keys {
+    $map: map-get($map, $key);
+  }
+  @return $map;
+}
+
+
+@function sass-themify-get-color($component){
+  @if $sass-themify-scheme-table == null {
+    @error "[sass-themify] You need to call sass-themify mixin to initialize a theme before you can call the sass-themify-get function.";
+  }
+  @if $sass-themify-theme-name == null {
+    @error "[sass-themify] sass-themify-get function can only be used within the scope of the 'sass-themify' mixin.";
+  }
+  @return sass-themify-get-map-deep($sass-themify-scheme-table,$sass-themify-theme-name,$component);
+}
+
+@function sass-themify-get-theme-name(){
+  @return $sass-themify-theme-name;
+}

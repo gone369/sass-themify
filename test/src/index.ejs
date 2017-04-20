@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8"/>
+    <meta name="viewport" content="width=device-width"/>
+    <title><%= htmlWebpackPlugin.options.title %></title>
+  </head>
+  <body>
+    <div id="root">
+      <div id="select" class="padding">
+        <b>Select Your Theme: </b>
+        <div class="flex-container flex-row">
+          <button key="" class="flex-item">Colorful</button>
+          <button key="red" class="flex-item">Red</button>
+          <button key="pink" class="flex-item">Pink</button>
+        </div>
+        <div class="flex-container flex-row">
+          <button key="blue" class="flex-item">Blue</button>
+          <button key="green" class="flex-item">Green</button>
+          <button key="purple" class="flex-item">Purple</button>
+        </div>
+      </div>
+      <div id="description" class="padding">
+        <b>Current Theme Colors: </b>
+        <div>
+          Background Color: 
+          <span id="background-color"></span>
+        </div>
+        <div>
+          Border Color: 
+          <span id="border-color"></span>
+        </div>
+        <div>
+          Text Color: 
+          <span id="text-color"></span>
+        </div>
+      </div>
+      <div id="box" class="padding">
+        <div id="text">
+          Hello World
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

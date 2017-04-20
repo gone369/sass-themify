@@ -1,0 +1,35 @@
+$theme:(
+  'default':(
+    'text': #E76F51,
+    'background': #E9C46A,
+    'border': #2A9D8F
+  ),
+  'red':(
+    'text': #FFFCE8,
+    'background': #DD403A,
+    'border': #3E363F
+  ),
+  'pink':(
+    'text': white,
+    'background': #FFD3E8,
+    'border': #E8D7FF
+  ),
+  'blue':(
+    'text': #0094C6,
+    'background': #001242,
+    'border': #000022
+  ),
+  'green':(
+    'text': #FCFFF7,
+    'background': #21A0A0,
+    'border': #046865
+  ),
+  'purple':(
+    'text': #EAEAEA,
+    'background': #893168,
+    'border': #4A1942
+  )
+);
+
+@include sass-themify-init($theme);
+
