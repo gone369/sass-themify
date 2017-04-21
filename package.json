@@ -4,6 +4,7 @@
   "description": "sass mixin for managing multiple themed sass templates",
   "main": "sass-themify.scss",
   "style": "sass-themify.scss",
+  "url": "https://github.com/gone369/sass-themify",
   "files": [
     "LICENSE.md",
     "README.md",
