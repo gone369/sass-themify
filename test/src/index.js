@@ -45,8 +45,6 @@ require("./main.scss");
       var $button = buttons[i];
       $button.addEventListener("click",function(e){
         var key = e.target.attributes.key.value;
-        console.log(key);
-        //document.getElementsByTagName('body')[0].className = key;
         document.getElementById('box').className = "padding " + key;
 
         populateDescription();

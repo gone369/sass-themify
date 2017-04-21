@@ -6,6 +6,7 @@
   "style": "sass-themify.scss",
   "files": [
     "LICENSE.md",
+    "README.md",
     "sass-themify.scss"
   ],
   "scripts": {
@@ -21,6 +22,5 @@
     "css"
   ],
   "author": "Xun Chen <xunchen369@gmail.com> (https://github.com/gone369)",
-  "license": "MIT",
-  "devDependencies": {}
+  "license": "MIT"
 }
