@@ -1,5 +1,9 @@
 Sass-Themify
 ============
+[![npm](https://img.shields.io/npm/v/sass-themify.svg)](https://www.npmjs.com/package/sass-themify) ![license](https://img.shields.io/npm/l/sass-themify.svg) ![github-issues](https://img.shields.io/github/issues/gone369/sass-themify.svg) ![npm-downloads](https://img.shields.io/npm/dt/sass-themify.svg)
+
+
+
 Sass-Themify is a sass library that comes with a set of mixins and functions to help you easily manage multiple color(or variable) themes.
 
 ### Usage
