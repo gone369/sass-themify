@@ -13,7 +13,7 @@
   "license": "ISC",
   "dependencies": {
     "css-loader": "^3.0.0",
-    "express": "^4.15.2",
+    "express": "^4.17.3",
     "html-webpack-plugin": "^2.28.0",
     "node-sass": "^4.13.1",
     "sass-loader": "^6.0.3",
